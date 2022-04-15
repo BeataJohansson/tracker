@@ -13,10 +13,10 @@ def main(argv):
 
     [wid, ht, sequence_name, dummy_1, dummy_2] = utils.choose_video_sequence(test)
 
-    img_fold_path = os.path.join('/Users/beatajohansson/Desktop/Object-Tracking-using-CNN-and-RNN/DATA', sequence_name, 'img/')
-    gt_file_path= os.path.join('/Users/beatajohansson/Desktop/Object-Tracking-using-CNN-and-RNN/DATA', sequence_name, 'groundtruth_rect.txt')
-    yolo_out_path= os.path.join('/Users/beatajohansson/Desktop/Object-Tracking-using-CNN-and-RNN/DATA', sequence_name, 'yolo_out/')
-    rolo_out_path= os.path.join('/Users/beatajohansson/Desktop/Object-Tracking-using-CNN-and-RNN/DATA', sequence_name, 'rolo_out_test/')
+    img_fold_path = os.path.join('/content/tracker/DATA', sequence_name, 'img/')
+    gt_file_path= os.path.join('/content/tracker/DATA', sequence_name, 'groundtruth_rect.txt')
+    yolo_out_path= os.path.join('/content/tracker/DATA', sequence_name, 'yolo_out/')
+    rolo_out_path= os.path.join('/content/tracker/DATA', sequence_name, 'rolo_out_test/')
 
     paths_imgs = utils.load_folder( img_fold_path)
     paths_rolo= utils.load_folder( rolo_out_path)
